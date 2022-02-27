@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>スタンプ３</title>
+  </head>
+  <body>
+    <h1>スタンプ３ページ</h1>
+    <p>スランプ１：<span id="stanp1">未完了</span></p>
+    <p>スランプ２：<span id="stanp2">未完了</span></p>
+    <p>スランプ３：<span id="stanp3">未完了</span></p>
+  </body>
+  <script type="text/javascript">
+  try {
+    sessionStorage.setItem("msg", "SESSION!");
+    alert(sessionStorage.msg);
+  } catch(e) {
+    alert(e);
+  }
+
+  try {
+    localStorage.setItem("msg", "LOCAL!");
+    alert(localStorage.msg);
+  } catch(e) {
+    alert(e);
+  }
+  </script>
+</html>
