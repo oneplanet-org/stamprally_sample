@@ -11,10 +11,10 @@
     <p>スランプ３：<span id="stanp3">未完了</span></p>
   </body>
   <script type="text/javascript">
-    window.sessionStorage.setItem(['stanp3'],[true]);
-    var stanp1 = window.sessionStorage.getItem(['stanp1']);
-    var stanp2 = window.sessionStorage.getItem(['stanp2']);
-    var stanp3 = window.sessionStorage.getItem(['stanp3']);
+    localStorage.setItem('stanp3', true);
+    var stanp1 = localStorage.getItem('stanp1');
+    var stanp2 = localStorage.getItem('stanp2');
+    var stanp3 = localStorage.getItem('stanp3');
 
     if (stanp1) {
       document.getElementById("stanp1").textContent="完了";
