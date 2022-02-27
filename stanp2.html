@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>スタンプ２</title>
+  </head>
+  <body>
+    <h1>スタンプ２ページ</h1>
+    <p>スランプ１：<span id="stanp1">未完了</span></p>
+    <p>スランプ２：<span id="stanp2">未完了</span></p>
+    <p>スランプ３：<span id="stanp3">未完了</span></p>
+  </body>
+  <script type="text/javascript">
+    window.sessionStorage.setItem(['stanp2'],[true]);
+    var stanp1 = window.sessionStorage.getItem(['stanp1']);
+    var stanp2 = window.sessionStorage.getItem(['stanp1']);
+    var stanp3 = window.sessionStorage.getItem(['stanp3']);
+
+    if (stanp1) {
+      document.getElementById("stanp1").textContent="完了";
+    }
+    if (stanp2) {
+      document.getElementById("stanp2").textContent="完了";
+    }
+    if (stanp3) {
+      document.getElementById("stanp3").textContent="完了";
+    }
+  </script>
+</html>
